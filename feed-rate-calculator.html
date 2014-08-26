@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="app">
+
+<body>
+		<script src="js/angular.js"></script>
+		<script src="components.js"></script>
+		<script src="app.js"></script>
+		
+		
+		<tabs>
+			<pane title="Hard Wood">
+				<div ng-controller="addTen">
+					<p>Speed(RPM):<br></p>
+					<p><input type="number" ng-model="speed" placeholder=0> <br></p>
+					<p># of Flutes (Cutting Edges):<br></p>
+					<p><input type="number" ng-model="numOfFlutes" placeholder=0> <br></p>
+					<p>Chip Load:<br></p>
+					<p><input type="number" ng-model="chipLoad" placeholder=0> <br></p>
+					<p>Feed Rate: {{ speed * numOfFlutes * chipLoad }}</p>
+					<img src="Hard-Wood-Cutting-Data-1024x731.jpg"></img>
+				</div>
+			</pane>
+			<pane title="Soft Wood">
+				<div ng-controller="addTen">
+					<p>Speed(RPM):<br></p>
+					<p><input type="number" ng-model="speed" placeholder=0> <br></p>
+					<p># of Flutes (Cutting Edges):<br></p>
+					<p><input type="number" ng-model="numOfFlutes" placeholder=0> <br></p>
+					<p>Chip Load:<br></p>
+					<p><input type="number" ng-model="chipLoad" placeholder=0> <br></p>
+					<p>Feed Rate: {{ speed * numOfFlutes * chipLoad }}</p>
+					<img src="Soft-Wood-Cutting-Data-1024x780.jpg"></img>
+				</div>
+			</pane>
+			<pane title="Hard Plastic">
+				<div ng-controller="addTen">
+					<p>Speed(RPM):<br></p>
+					<p><input type="number" ng-model="speed" placeholder=0> <br></p>
+					<p># of Flutes (Cutting Edges):<br></p>
+					<p><input type="number" ng-model="numOfFlutes" placeholder=0> <br></p>
+					<p>Chip Load:<br></p>
+					<p><input type="number" ng-model="chipLoad" placeholder=0> <br></p>
+					<p>Feed Rate: {{ speed * numOfFlutes * chipLoad }}</p>
+					<img src="Hard-Plastic-Cutting-Data.jpg"></img>
+				</div>
+			</pane>
+			<pane title="Soft Plastic">
+				<div ng-controller="addTen">
+					<p>Speed(RPM):<br></p>
+					<p><input type="number" ng-model="speed" placeholder=0> <br></p>
+					<p># of Flutes (Cutting Edges):<br></p>
+					<p><input type="number" ng-model="numOfFlutes" placeholder=0> <br></p>
+					<p>Chip Load:<br></p>
+					<p><input type="number" ng-model="chipLoad" placeholder=0> <br></p>
+					<p>Feed Rate: {{ speed * numOfFlutes * chipLoad }}</p>
+					<img src="Soft-Plastic-Cutting-Data-1024x600.jpg"></img>
+				</div>
+			</pane>
+			<pane title="Aluminum">
+				<div ng-controller="addTen">
+					<p>Speed(RPM):<br></p>
+					<p><input type="number" ng-model="speed" placeholder=0> <br></p>
+					<p># of Flutes (Cutting Edges):<br></p>
+					<p><input type="number" ng-model="numOfFlutes" placeholder=0> <br></p>
+					<p>Chip Load:<br></p>
+					<p><input type="number" ng-model="chipLoad" placeholder=0> <br></p>
+					<p>Feed Rate: {{ speed * numOfFlutes * chipLoad }}</p>
+					<img src="Aluminum-Cutting-Data-1024x475.jpg"></img>
+				</div>
+			</pane>
+		</tabs>
+<script>
+function addTen($scope){
+$scope.speed=0;
+$scope.numOfFlutes=0;
+$scope.chipLoad=0;
+}
+</script>
+<link rel="stylesheet" href="bootstrap.css">
+</body>
+</html>
